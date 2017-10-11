@@ -1,0 +1,24 @@
+<header class="text-center">
+    <h1>Sign up for an account now</h1>
+</header>
+
+<form (submit)="onRegisterSubmit()">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="name" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="username">User Name</label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username" placeholder="Enter desired username">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" [(ngModel)]="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email address">
+        <small id="emailHelp" class="form-text text-muted">We won't share your email with anyone.</small>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password" id="password" placeholder="Enter desired password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

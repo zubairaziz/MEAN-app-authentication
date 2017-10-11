@@ -1,0 +1,15 @@
+<header class="text-center">
+    <h1>Login to your account</h1>
+</header>
+
+<form (submit)="onLoginSubmit()">
+    <div class="form-group">
+        <label for="username">User Name</label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username" placeholder="Enter your username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password" id="password" placeholder="Enter your password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
